@@ -1,5 +1,11 @@
-This is ReadMe File
 - Introduction to Project
+
+ Language of implementation: C#. Operating system: Windows 10.
+ Interactive Education System was a Web-based application, which allowed a particular college or
+   institute to carry out, conduct and manage Quiz via an online platform.
+ Using IES students can improve their learning experience and can interact with professor by
+  random quiz questions. GUI was developed using Materialize CSS.
+ GitHub was used for collaboration.
 
 Team Members:
 
