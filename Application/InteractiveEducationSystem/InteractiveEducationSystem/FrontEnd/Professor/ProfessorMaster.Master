@@ -1,0 +1,147 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ProfessorMaster.master.cs" Inherits="InteractiveEducationSystem.FrontEnd.Professor.ProfessorMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <title></title>
+
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!--Header-->        
+ 
+        <div class="row">
+
+            <div class="navbar-fixed">
+                <nav>
+                    <div class="nav-wrapper">
+                        <a href="#!" class="brand-logo center hide-on-med-and-down">Interactive Education System</a>
+                        <div runat="server" id="LoginDetails" class="right">
+                            Welcome
+                            <asp:Label ID="UserPageName" runat="server" Text=""></asp:Label>
+                            <asp:Button ID="LogOut" runat="server" Text="Logout" class="waves-effect waves-light btn-small" OnClick="LogOut_Click" />
+                        </div>
+                        <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                            <i class="material-icons">menu
+                            </i>
+                        </a>
+                      
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Dropdown Structure -->
+            <ul id="dropdown1" class="dropdown-content">
+                <li><a href="#!">Edit Profile</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Logout</a></li>
+            </ul>
+
+            <!--Mobile Side Nav-->
+            <ul class="sidenav" id="mobile-demo">
+                <li class="logo" style="margin-left: -18px; margin-right: -30px;">
+                    <a href="#!" class="brand-logo center hide-on-med-and-down">Interactive Education System</a>
+                </li>
+                <li><a href="#!">Home</a></li>
+                <li><a href="#!">Courses</a></li>
+                <li><a href="#!">Tech Support</a></li>
+            </ul>
+
+        </div>
+        
+        
+
+        <div class="row">
+
+            <!--Side Nav Fixed-->
+            
+            <blockquote class="col l2 center card-title hide-on-med-and-down">
+                <ul>
+                    <li><a href="../../Login.aspx">Home</a></li>
+                    <li class="divider"></li>
+                    <li><a href="/FrontEnd/Professor/ProfessorCourses.aspx">Courses</a></li>
+                    <li class="divider"></li>
+                    <li><a href="/FrontEnd/Professor/StudentList.aspx">Student List</a></li>
+                    <li class="divider"></li>
+                    <li><a href="/FrontEnd/Professor/ProfessorProfile.aspx">Edit Profile</a></li>
+                    <li class="divider"></li>
+                    <li><a href="CourseList.aspx">Course List</a></li>
+                    <li class="divider"></li>
+                    <li><a href="/FrontEnd/Professor/QuizSetings.aspx">Quiz Setting</a></li>
+                </ul>
+            </blockquote>
+            
+            <blockquote class="col l10">
+                <!--Body-->
+
+                <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                    </asp:ContentPlaceHolder>
+                </div>
+            </blockquote>
+
+        </div>
+        
+        <div class="row">
+
+            <!--Footer-->
+            <footer class="page-footer">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col l12 s12 m12 offset-l1 right-align">
+                            <a href="~/ResolveConflicts.aspx" class="btn-floating btn-large waves-effect waves-light red" runat="server" onclick="ResolveIssue" id="resolveIssuebtn"><i class="material-icons">announcement</i></a>
+                        </div>
+
+                        <div class="col l12 s12 center">
+                            <h5 class="white-text">Developed By: Centennial College Students - Team1</h5>
+                            <p class="grey-text text-lighten-4">Follow Us : InteractiveEducationSystem/Facebook</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <div class="container">
+                        © 2018 Copyright Text&nbsp;
+                    </div>
+                </div>
+            </footer>
+
+        </div>        
+
+    </form>
+
+    <!-- Compiled and minified JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+</body>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.dropdown-trigger').dropdown();
+            $('.collapsible').collapsible();
+            $('select').formSelect();
+            $('.modal').modal();
+          });
+    </script>
+</html>
