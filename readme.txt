@@ -10,9 +10,10 @@
 Team Members:
 
 1) Harsh Tiwar - 300931876
-2) Priyank Bora - 300989862
-3) Rachita Khare - 300986795
-4) TirthrajSinh Chauhan-300990930
-5) Rajankumar Gohel-300987339
-6) Gurleen Kaur - 30029601
-7) Bhavin Mohindru - 300926633
+2) Swapnika Patel - 300982346
+3) Priyank Bora - 300989862
+4) Rachita Khare - 300986795
+5) TirthrajSinh Chauhan-300990930
+6) Rajankumar Gohel-300987339
+7) Gurleen Kaur - 30029601
+8) Bhavin Mohindru - 300926633
